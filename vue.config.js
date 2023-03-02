@@ -24,7 +24,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: '/',
+  // publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
@@ -35,18 +35,20 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      '/api': {
+        target: 'http://ihrm.itheima.net/',
+        changeOrigin: true
+        // pathRewrite: {
+        //   '^/api': ''
+        // }
+      }
     }
+    // lintOnSave: false
     // before: require('./mock/mock-server.js')
   },
-  proxy: {
-    '/api': {
-      target: 'http://ihrm-java.itheima.net/',
-      changeOrigin: true
-      // pathRewrite: {
-      //   '^/api': ''
-      // }
-    }
-  },
+
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
     // it can be accessed in index.html to inject the correct title.
