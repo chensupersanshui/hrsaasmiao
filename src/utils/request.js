@@ -7,7 +7,7 @@ import { getTimeStamp } from './auth'
 const TimeOut = 3600 // 定义时间
 const service = axios.create({
   baseURL: process.env.VUE_APP_BASE_API,
-  timeout: 5000
+  timeout: 10000
 })
 service.interceptors.request.use(config => {
   // 在这个位置需要统一的去注入token
