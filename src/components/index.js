@@ -5,6 +5,8 @@ import ImageUpload from './ImageUpload'
 import Print from 'vue-print-nb'
 import ScreenFull from './screenFull'
 import ThemePicker from './ThemePicker'
+import Lang from './Lang'
+import TagsView from './TagsView'
 export default {
   install(Vue) {
     // 组件注册
@@ -14,5 +16,7 @@ export default {
     Vue.use(Print)
     Vue.component('ScreenFull', ScreenFull)
     Vue.component('ThemePicker', ThemePicker)
+    Vue.component('Lang', Lang)
+    Vue.component('TagsView', TagsView)
   }
 }

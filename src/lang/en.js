@@ -1,149 +1,123 @@
-export default {
-  route: {
-    dashboard: 'Dashboard',
-    manage: 'manage',
-    users: 'users',
-    menus: 'menus',
-    // permissions: 'permissions',
-    logs: 'logs',
-    example: 'example',
-    table: 'table',
+'use strict';
 
-    postInfo: 'Job information',
-    manageSelf: 'Manager self-help',
-    setting: 'setting',
-    report: 'report',
-    employeesAdd: 'add employees',
-    EditiNfo: 'Edit information',
-    print: 'print',
-
-    form: 'form',
-    basicForm: 'basic form',
-    stepForm: 'step form',
-    advancedList: 'advanced form',
-    step: 'step',
-
-    details: 'details',
-    BasicsDetails: 'Basic details page',
-    seniorDetails: 'Advanced details page',
-    import: 'Import',
-    register: 'HRM-Register',
-
-    // 登录
-    login: 'HRM-Login',
-    // 审批
-    approvals: 'Approvals', // 审批
-    salaryApproval: 'Salary-Approval',
-    enterApproval: 'Enter-Approval',
-    leaveApproval: 'Leave-Approval',
-    quitApproval: 'Quit-Approval',
-    overtimeApproval: 'Overtime-Approval',
-    securitySetting: 'Security-Setting',
-    // 员工
-    employees: 'Employees',
-    employeesList: 'Employees-List',
-    employeesInfo: 'Employees-Info',
-    employeesAdjust: 'Employees-Adjust',
-    employeesLeave: 'Employees-Leave',
-    employeesPrint: 'Employees-Print',
-    // 工资
-    salarys: 'salarys',
-    salarysList: 'Salarys-List',
-    salarysSetting: 'Salarys-Setting',
-    salarysDetails: 'Salarys-Details',
-    salarysHistorical: 'Salarys-Historical',
-    salarysMonthStatement: 'Salarys-Month',
-    // 社保
-    'social_securitys': 'Social',
-    socialSecuritys: 'Social-Securitys',
-    socialDetail: 'Social-Detail',
-    socialHistorical: 'Social-Historical',
-    socialMonthStatement: 'Social-Month',
-    // 组织架构
-    departments: 'departments',
-    'departments-import': 'import',
-
-    // 公司
-    settings: 'Company-Settings',
-    // 考勤
-    attendances: 'Attendances',
-    // 用户审批
-    usersApprovals: 'Users-Approvals',
-    // 企业
-    'saas-clients': 'Saas-Clients',
-    'saas-clients-details': 'Saas-Details',
-    'permissions': 'permissions' // 权限管理
-
-  },
-  navbar: {
-    search: 'search',
-    logOut: 'Log Out',
-    dashboard: 'Dashboard',
-    github: 'Github',
-    screenfull: 'screenfull',
-    theme: 'theme',
-    lang: 'i18n',
-    error: 'error log'
-  },
-  login: {
-    title: 'itheima login',
-    login: 'Log in',
-    name: 'name',
-    entryTime: 'entry time',
-    hireForm: 'hire form',
-    jobNumber: 'job number',
-    department: 'department',
-    managementForm: 'management form',
-    city: 'city',
-    turnPositiveTime: 'turn positive time',
-
-    password: 'Password',
-    any: 'any',
-    thirdparty: 'Third',
-    thirdpartyTips: 'Can not be simulated on local, so please combine you own business simulation! ! !'
-  },
-  tagsView: {
-    close: 'Close',
-    closeOthers: 'Close Others',
-    closeAll: 'Close All',
-    refresh: 'refresh'
-
-  },
-  table: {
-    title: 'Title',
-    search: 'Search',
-    add: 'add',
-    addUser: 'addUser',
-    id: 'ID',
-    email: 'Email',
-    phone: 'Phone',
-    username: 'User',
-    permissionNew: 'permissionNew',
-    permissionUser: 'Permission',
-    imdsAi: 'Advanced interface authorization',
-    avatar: 'Avatar',
-    introduction: 'Introduction',
-    paddword: 'paddWord',
-    powerCode: 'Permission code',
-    powerTitle: 'Permission title',
-    actions: 'Actions',
-    edit: 'Edit',
-    delete: 'Delete',
-    cancel: 'Cancel',
-    confirm: 'Confirm',
-    operationType: 'operationType',
-    operationDate: 'operationDate',
-    date: 'Date',
-    operator: 'operator',
-    results: 'results of enforcement',
-    describe: 'Pedagogical operation',
-    save: 'save',
-    signOut: 'sign out',
-    submit: 'submit',
-    reset: 'reset',
-    know: 'I Know',
-    return: 'return',
-    view: 'view'
-
+exports.__esModule = true;
+exports.default = {
+  el: {
+    colorpicker: {
+      confirm: 'OK',
+      clear: 'Clear'
+    },
+    datepicker: {
+      now: 'Now',
+      today: 'Today',
+      cancel: 'Cancel',
+      clear: 'Clear',
+      confirm: 'OK',
+      selectDate: 'Select date',
+      selectTime: 'Select time',
+      startDate: 'Start Date',
+      startTime: 'Start Time',
+      endDate: 'End Date',
+      endTime: 'End Time',
+      prevYear: 'Previous Year',
+      nextYear: 'Next Year',
+      prevMonth: 'Previous Month',
+      nextMonth: 'Next Month',
+      year: '',
+      month1: 'January',
+      month2: 'February',
+      month3: 'March',
+      month4: 'April',
+      month5: 'May',
+      month6: 'June',
+      month7: 'July',
+      month8: 'August',
+      month9: 'September',
+      month10: 'October',
+      month11: 'November',
+      month12: 'December',
+      week: 'week',
+      weeks: {
+        sun: 'Sun',
+        mon: 'Mon',
+        tue: 'Tue',
+        wed: 'Wed',
+        thu: 'Thu',
+        fri: 'Fri',
+        sat: 'Sat'
+      },
+      months: {
+        jan: 'Jan',
+        feb: 'Feb',
+        mar: 'Mar',
+        apr: 'Apr',
+        may: 'May',
+        jun: 'Jun',
+        jul: 'Jul',
+        aug: 'Aug',
+        sep: 'Sep',
+        oct: 'Oct',
+        nov: 'Nov',
+        dec: 'Dec'
+      }
+    },
+    select: {
+      loading: 'Loading',
+      noMatch: 'No matching data',
+      noData: 'No data',
+      placeholder: 'Select'
+    },
+    cascader: {
+      noMatch: 'No matching data',
+      loading: 'Loading',
+      placeholder: 'Select',
+      noData: 'No data'
+    },
+    pagination: {
+      goto: 'Go to',
+      pagesize: '/page',
+      total: 'Total {total}',
+      pageClassifier: ''
+    },
+    messagebox: {
+      title: 'Message',
+      confirm: 'OK',
+      cancel: 'Cancel',
+      error: 'Illegal input'
+    },
+    upload: {
+      deleteTip: 'press delete to remove',
+      delete: 'Delete',
+      preview: 'Preview',
+      continue: 'Continue'
+    },
+    table: {
+      emptyText: 'No Data',
+      confirmFilter: 'Confirm',
+      resetFilter: 'Reset',
+      clearFilter: 'All',
+      sumText: 'Sum'
+    },
+    tree: {
+      emptyText: 'No Data'
+    },
+    transfer: {
+      noMatch: 'No matching data',
+      noData: 'No data',
+      titles: ['List 1', 'List 2'], // to be translated
+      filterPlaceholder: 'Enter keyword', // to be translated
+      noCheckedFormat: '{total} items', // to be translated
+      hasCheckedFormat: '{checked}/{total} checked' // to be translated
+    },
+    image: {
+      error: 'FAILED'
+    },
+    pageHeader: {
+      title: 'Back' // to be translated
+    },
+    popconfirm: {
+      confirmButtonText: 'Yes',
+      cancelButtonText: 'No'
+    }
   }
-}
+};
